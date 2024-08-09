@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc'; // Import the SWC plugin
 
-// https://vitejs.dev/config/
+console.log('Using SWC for React transformations'); 
+
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [react()], // Use the SWC plugin
+});
