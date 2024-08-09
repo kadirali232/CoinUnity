@@ -1,0 +1,159 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: #12078e; /* Your color */
+  color: white;
+  border-bottom: 2px solid #3c3c3c;
+  position: relative; /* Ensure dropdown is positioned correctly */
+}
+
+.navbar-logo {
+  width: max(12vw, 120px);
+  margin-right: auto; /* Ensure space is pushed to the right for alignment */
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* Ensure positioning context for absolute bars */
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open .bar1{
+opacity: 0;/* Align to the left */
+}
+
+ 
+  .hamburger.open .bar2 {
+    transform: rotate(45deg); /* Rotate to form the bottom right diagonal of X */
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+  }
+
+
+.hamburger.open .bar3 {
+  transform: rotate(-45deg); /* Rotate to form the bottom right diagonal of X */
+  position: absolute;
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 55px;
+  list-style: none;
+  font-size: larger;
+}
+
+.navbar-menu li {
+  cursor: pointer;
+}
+
+.navbar-menu li a:hover{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right select {
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 0.2px solid white;
+  background: transparent;
+  color: white;
+}
+
+.nav-right select option {
+  background-color: #02010d;
+  color: white;
+}
+
+.navbar-menu button {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 17px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.navbar-menu button {
+  background: #7927ff;
+  color: white;
+  margin-top: -4px;
+}
+
+.navbar-menu button:hover {
+  background-color: #6a1fcb;
+}
+
+.navbar button img {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: flex;
+    margin-left: auto;
+    margin-top: -31.5px;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #12078e;
+    gap: 25px;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .nav-right select {
+    display: none; /* Hide select on mobile */
+  }
+}
+

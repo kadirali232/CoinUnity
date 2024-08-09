@@ -1,0 +1,134 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(19, 21, 130);
+}
+
+.signup-card {
+  background: rgb(247, 247, 247);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  max-width: 400px;
+  min-height: 580px;
+  width: 100%;
+  text-align: center;
+}
+
+.signup-card h2 {
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 450;
+}
+
+.signup-card h3 {
+  margin-bottom: 30px;
+  color: rgb(52, 45, 45);
+  font-size: 12px;
+  font-weight: 450;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fffafa;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7927ff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #5e1fbd;
+}
+
+.separator {
+  margin: 20px 0;
+}
+
+.separator h4 {
+  margin: 0;
+  color: #000000;
+  font-weight: 450;
+}
+
+.sign-in {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fffafa;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  background-color: #f0f0f0;
+}
+
+.google-login-container {
+  display: flex; /* Added */
+  justify-content: center; /* Center horizontally */
+  margin-top: 10px;
+}
+
+.google-login {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.google-login:hover {
+  background-color: #357ae8;
+}
+
+.login-prompt {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-prompt h5 {
+  margin: 0;
+  color: black;
+  font-weight: 450;
+}
+
+.login-prompt h6 {
+  margin: 0;
+  margin-left: 10px;
+  color: black;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 480;
+}
+
+.login-prompt h6:hover {
+  text-decoration: underline;
+}

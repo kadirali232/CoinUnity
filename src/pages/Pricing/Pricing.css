@@ -1,0 +1,157 @@
+/* Default styles */
+.pricing-container {
+  text-align: center;
+  padding: 50px;
+  box-shadow: 0 2px 4px rgba(115, 4, 4, 0.1);
+}
+
+.pricing-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.plan {
+  background-color: rgb(19, 21, 130);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+}
+
+.plan h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.per-month {
+  font-size: 0.5em;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan ul li {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.subscribe-button {
+  background-color: #4500c6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.subscribe-button:hover {
+  background-color: #350096;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .pricing-container {
+    padding: 20px 5%;
+  }
+
+  .pricing-container h1 {
+    font-size: 28px;
+  }
+
+  .plan {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .plan h2 {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .per-month {
+    font-size: 12px;
+  }
+
+  .plan ul li {
+    font-size: 14px;
+  }
+
+  .subscribe-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Media Queries for Very Small Devices (320px and below) */
+@media (max-width: 320px) {
+  .pricing-container {
+    padding: 10px 2%;
+  }
+
+  .pricing-container h1 {
+    font-size: 20px; /* Smaller heading font size */
+    margin-bottom: 15px; /* Reduced margin */
+  }
+
+  .plans {
+    gap: 10px; /* Reduced gap between plans */
+  }
+
+  .plan {
+    padding: 10px;
+    width: 100%; /* Full width for better fit */
+    margin-bottom: 15px; /* Reduced margin */
+  }
+
+  .plan h2 {
+    font-size: 18px; /* Slightly smaller font size */
+  }
+
+  .price {
+    font-size: 20px; /* Smaller font size */
+  }
+
+  .per-month {
+    font-size: 10px; /* Smaller font size */
+  }
+
+  .plan ul li {
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .subscribe-button {
+    font-size: 12px; /* Smaller button font size */
+    padding: 6px 12px; /* Smaller padding */
+  }
+}
