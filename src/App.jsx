@@ -7,7 +7,7 @@ import Pricing from './pages/Pricing/Pricing';
 import Footer from './components/Footer/Footer';
 import Features from './pages/Features/Features';
 import Blog from './pages/Blog/Blog';
-import LogIn from './pages/Log In/LogIn';
+import LogIn from './pages/LogIn/LogIn';
 import SignUp from './pages/Sign Up/SignUp';
 
 
