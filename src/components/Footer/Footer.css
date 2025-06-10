@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 10%;
-    background:linear-gradient(rgba(17, 2, 48, 0.15),rgba(25, 3, 35, 0.15));
+    background:linear-gradient(rgba(17, 1, 48, 0.15),rgba(25, 3, 35, 0.15));
     color: #ddd;
     font-size: 11px;
   }
